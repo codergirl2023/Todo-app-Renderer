@@ -49,7 +49,7 @@ router.delete("/:todoId", auth, async (req, res) => {
                 authorId: Number(req.headers["userId"])
             },
         });
-        res.status(200).json({ "message": "delete done!" })
+        res.status(200).json({ "message": "Todo deleted!" })
     } catch (e) {
         res.status(403).json({ "message": "delete unsuccessful!" })
     }
